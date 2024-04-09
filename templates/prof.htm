@@ -1,0 +1,17 @@
+{% extends "base.htm" %}
+{% block content %}
+<div class="mx-auto">
+    <h2>
+        {% if engineer %}
+        Инженерные тренажеры
+        {% else %}
+        Научные симуляторы
+        {% endif %}
+    </h2>
+    {% if engineer %}
+    <img src="/static/img/engineer.jpg" alt="Инженерные тренажеры">
+    {% else %}
+    <img src="/static/img/science.jpg" alt="Научные симуляторы">
+    {% endif %}
+</div>
+{% endblock %}
